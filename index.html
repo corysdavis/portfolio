@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
+    <h1 id="welcomeMessage">Welcome!</h1>
+
+    <!-- Navigation for sections -->
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi! My name is Cory, and I’m learning web development.
+            I have worked with various programming languages 
+            and look to continue getting better with development as I learn more.
+        </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <a href="https://github.com/corysdavis/online-store" target="_blank">
+            <img src="https://via.placeholder.com/150" alt="Online Store">
+        </a>
+
+        <a href="https://github.com/corysdavis/restaurant-menu-app" target="_blank">
+            <img src="https://via.placeholder.com/150" alt="Restaurant Menu App">
+        </a>
+
+        <a href="https://github.com/corysdavis/Task---Habit-Manager" target="_blank">
+            <img src="https://via.placeholder.com/150" alt="Task and Habit Manager">
+        </a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+            <label>Name:</label><br>
+            <input type="text"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email"><br><br>
+
+            <label>Subject:</label><br>
+            <input type="text"><br><br>
+
+            <label>Message:</label><br>
+            <textarea rows="4"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- JavaScript to get name -->
+    <script>
+        let userName = prompt("Please enter your name");
+        if (userName) {
+            document.getElementById("welcomeMessage").textContent =
+                "Welcome, " + userName + "!";
+        }
+    </script>
+
+</body>
+</html>
